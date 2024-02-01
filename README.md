@@ -271,7 +271,9 @@ A new Table named 2022_CyclisticTripData_Cleaned is created by making a copy of 
 ```
 ![image](https://github.com/StarrieW/GoogleDataAnalytics_Capstone/assets/157820867/714a5d55-e0c9-43f2-a644-9a5e8226e497)
 
-<ins>Data Cleaning</ins>
+A new Table named 2022_CyclisticTripData_Cleaned2 is created by making a copy of the 2022_CyclisticTripData_Cleaned Table (with 8 New Columns Added), and Dirty Data are removed.
+
+<ins>Create a New Table with Dirty Data Removed</ins>
 
 1. Check Dirty Data to be deleted - 1,375,912 Records with NULL or Erroneous Values
    1. Rows with NULL values: Columns 5 OR 6 OR 7 OR 8 OR 9 OR 10 OR 11 OR 12: start_station_name IS NULL OR start_station_id IS NULL OR end_station_name IS NULL OR end_station_id IS NULL OR start_lat IS NULL OR start_lng IS NULL OR end_lat IS NULL OR end_lng IS NULL
