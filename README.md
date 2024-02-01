@@ -348,19 +348,20 @@ There is a total of 4,291,805 Records in 2022_CyclisticTripData_Cleaned2 Table a
 ![image](https://github.com/StarrieW/GoogleDataAnalytics_Capstone/assets/157820867/bcadf65d-e1ad-468b-b180-9e6a08711206)
 
 ### <ins>Step 5 of Data Analysis Process: Share</ins>
+> 
+> Tableau Visualizations: [Tableau Visualizations](https://public.tableau.com/app/profile/starrie.woon/viz/CyclisticTrip_17003299712910/Dashboard1)
+> 
+**Key Insights**
 
+
+## **3. Conclusion** 
 ### <ins>Step 6 of Data Analysis Process: Act</ins>
-
-## **3. Solutions** 
-Outline a solution that would alleviate the problem and have a few alternatives in mind to show that you have given the case study considerable thought. Don’t forget to include pros and cons for each solution.
-
-## **4. Conclusion** 
 End your presentation by summarizing key takeaways of all of the problem-solving you conducted, highlighting what you have learned from this.
 
+### Solutions<br>
+Outline a solution that would alleviate the problem and have a few alternatives in mind to show that you have given the case study considerable thought. Don’t forget to include pros and cons for each solution.
 
-
-
-## **5. Recommendations** 
+### Recommendations<br>
 Explain why you made your choice and how this will affect the scenario in a positive way. Be specific and include what needs to be done, who should enforce it, and when.
 
 
