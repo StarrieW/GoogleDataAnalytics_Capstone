@@ -356,6 +356,41 @@ SELECT
 FROM
   `sw-coursera-project1.CyclisticTripData.2022_CyclisticTripData`
 WHERE
-  TIMESTAMP_DIFF(ended_at, started_at, SECOND) >= 86400
+  TIMESTAMP_DIFF(ended_at, started_at, SECOND) > 86400
+--*/
+
+--Check number of Records with Ride Length based on Difference of Column 3 and 2 ended_at and started_at less than or equals to 0 second // Returns: 531 Records with trip_duration_sec <= 0 second
+--*/
+SELECT
+  *,
+  TIMESTAMP_DIFF(ended_at, started_at, SECOND) AS trip_duration_sec
+FROM
+  `sw-coursera-project1.CyclisticTripData.2022_CyclisticTripData`
+WHERE
+  TIMESTAMP_DIFF(ended_at, started_at, SECOND) <= 0
+--*/
+
+--Check number of Records with Ride Length based on Difference of Column 3 and 2 ended_at and started_at more than 0 second and less than or equals to 60 seconds // Returns: 121,752 Records with trip_duration_sec > 0 second and <= 60 seconds
+--*/
+SELECT
+  *,
+  TIMESTAMP_DIFF(ended_at, started_at, SECOND) AS trip_duration_sec
+FROM
+  `sw-coursera-project1.CyclisticTripData.2022_CyclisticTripData`
+WHERE
+  TIMESTAMP_DIFF(ended_at, started_at, SECOND) > 0 AND
+  TIMESTAMP_DIFF(ended_at, started_at, SECOND) <= 60
+--*/
+
+
+--Check number of Records with Ride Length based on Difference of Column 3 and 2 ended_at and started_at less than or equals to 60 seconds (1 minute) // Returns: 122,283 Records with trip_duration_sec <= 60 seconds
+--*/
+SELECT
+  *,
+  TIMESTAMP_DIFF(ended_at, started_at, SECOND) AS trip_duration_sec
+FROM
+  `sw-coursera-project1.CyclisticTripData.2022_CyclisticTripData`
+WHERE
+  TIMESTAMP_DIFF(ended_at, started_at, SECOND) <= 60
 --*/
 
