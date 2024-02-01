@@ -45,8 +45,8 @@ FROM
     `sw-coursera-project1.CyclisticTripData.2022_CyclisticTripData_Cleaned`
 
 
---Delete Dirty Data Rows with NULL or Errorneous Values where:
---(1) start_station_name IS NULL OR start_station_id IS NULL OR end_station_name IS NULL OR end_station_id IS NULL
+--Delete Dirty Data Rows with NULL or Erroneous Values where:
+--(1) start_station_name IS NULL OR start_station_id IS NULL OR end_station_name IS NULL OR end_station_id IS NULL OR start_lat IS NULL OR start_lng IS NULL OR end_lat IS NULL OR end_lng IS NULL
 --(2) trip_duration_second <= 0 OR trip_duration_second <= 60 OR trip_duration_second >= 86400 
 
 --Check Number of Rows After Deletion of Dirty Data: 4,291,805 Records
@@ -64,7 +64,7 @@ WHERE
   trip_duration_second < 86400 --Check for trip_duration_second < 86,400 seconds (< 24 hours) // Returns: 4,291,805 Records x// Returns: 4,368,896 Recordsx
 
 
---Check Number of Dirty Data Rows to be Deleted: 1,375,912 Records x//1,298,665 Records
+--Check Number of Dirty Data Rows to be Deleted: 1,375,912 Records x//1,298,357 Records
 SELECT
   *
 FROM
@@ -74,7 +74,11 @@ WHERE
   start_station_id IS NULL OR
   end_station_name IS NULL OR
   end_station_id IS NULL OR
-  --trip_duration_second <= 0 --TIMESTAMP_DIFF(ended_at, started_at, SECOND) > 0 --AND --Exclude trip_duration_sec <= 0 seconds (including negative values for those started_at start trip time is later than ended_at end trip time) // Returns: 4,369,052 Records
+  start_lat IS NULL OR 
+  start_lng IS NULL OR 
+  end_lat IS NULL OR 
+  end_lng IS NULL OR
+  --trip_duration_second <= 0 --TIMESTAMP_DIFF(ended_at, started_at, SECOND) > 0 --AND --Exclude trip_duration_sec <= 0 seconds (including negative values for those started_at start trip time is later than ended_at end trip time) // Returns: 4,369,052 Records*/
   trip_duration_second <= 60 OR --// Returns: 1,375,756 Records
   trip_duration_second >= 86400 --// Returns: 1,375,912 Records
 
@@ -85,6 +89,10 @@ WHERE
   start_station_id IS NULL OR 
   end_station_name IS NULL OR 
   end_station_id IS NULL OR
+  start_lat IS NULL OR
+  start_lng IS NULL OR
+  end_lat IS NULL OR
+  end_lng IS NULL OR
   --trip_duration_second <= 0
   trip_duration_second <= 60 OR
   trip_duration_second >= 86400
@@ -102,6 +110,10 @@ CREATE TABLE `sw-coursera-project1.CyclisticTripData.2022_CyclisticTripData_Clea
     start_station_id IS NOT NULL AND
     end_station_name IS NOT NULL AND
     end_station_id IS NOT NULL AND
+    start_lat IS NOT NULL AND
+    start_lng IS NOT NULL AND
+    end_lat IS NOT NULL AND
+    end_lng IS NOT NULL AND
     --trip_duration_second > 0 AND --Exclude trip_duration_second <= 0 seconds (including negative values for those started_at start trip time is later than ended_at end trip time) // Returns: 4,369,052 Records
     trip_duration_second > 60 AND --Check for trip_duration_second > 60 seconds (> 1 minute) // Returns: 4,291,961 Records
     trip_duration_second < 86400 --Check for trip_duration_second < 86,400 seconds (< 24 hours) // Returns: 4,291,805 Records x// Returns: 4,368,896 Recordsx
@@ -115,50 +127,3 @@ FROM
     `sw-coursera-project1.CyclisticTripData.2022_CyclisticTripData_Cleaned2`
 
 
-/*
---Create a New Table named 2022_CyclisticTripData_Cleaned (copy of 2022_CyclisticTripData Table)
-CREATE TABLE `sw-coursera-project1.CyclisticTripData.2022_CyclisticTripData_Cleaned` AS
-(
-  SELECT
-    *
-  FROM
-    `sw-coursera-project1.CyclisticTripData.2022_CyclisticTripData`
-)
-
-ALTER TABLE `sw-coursera-project1.CyclisticTripData.2022_CyclisticTripData_Cleaned`
-ADD COLUMN started_date DATE,
-ADD COLUMN started_month STRING,
-ADD COLUMN started_day_of_week STRING,
-ADD COLUMN started_time TIME,
-ADD COLUMN started_time_of_day STRING,
-ADD COLUMN trip_duration_second INT64,
-ADD COLUMN trip_duration_minute NUMERIC,
-ADD COLUMN trip_route STRING
-
-UPDATE `sw-coursera-project1.CyclisticTripData.2022_CyclisticTripData_Cleaned`
-SET started_date = EXTRACT(DATE FROM started_at),
-SET started_month = FORMAT_DATETIME("%B", DATETIME(started_at)),
-SET started_day_of_week = FORMAT_DATE('%A', EXTRACT(DATE FROM started_at)),
-SET started_time = EXTRACT(TIME FROM started_at),
-SET started_time_of_day = 
-    CASE WHEN CAST(EXTRACT(TIME FROM started_at) AS TIME) >= '00:00:00' AND
-              CAST(EXTRACT(TIME FROM started_at) AS TIME) <= '05:59:00'
-         THEN 'Early Morning'
-         WHEN CAST(EXTRACT(TIME FROM started_at) AS TIME) >= '06:00:00' AND
-              CAST(EXTRACT(TIME FROM started_at) AS TIME) <= '11:59:00'
-         THEN 'Morning'
-         WHEN CAST(EXTRACT(TIME FROM started_at) AS TIME) >= '12:00:00' AND
-              CAST(EXTRACT(TIME FROM started_at) AS TIME) <= '17:59:00'
-         THEN 'Afternoon'   
-         ELSE 'Night'
-    END AS,
-SET trip_duration_second = TIMESTAMP_DIFF(ended_at, started_at, SECOND),
-SET trip_duration_minute = ROUND(CAST(TIMESTAMP_DIFF(ended_at, started_at, SECOND) AS INT64)/60, 2),
-SET trip_route = CONCAT(start_station_name," to ",end_station_name)
-*/
-
-
-/*
-ALTER TABLE `sw-coursera-project1.CyclisticTripData.2022_CyclisticTripData_Cleaned`
-ALTER COLUMN trip_duration_minute SET DATA TYPE NUMERIC;
-*/
