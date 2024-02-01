@@ -103,7 +103,7 @@ FROM
 --*/
 
 
---Check if Trip Start time based on Column 3 started_at is after/later than Trip End Time based on Column 4 ended_at // Returns: 531 Records with trip_duration_sec <= 0 seconds
+--Check if Trip Start time based on Column 3 started_at is equals to or after/later than Trip End Time based on Column 4 ended_at by calculating the Trip Duration in seconds based on the difference (Trip End Time - Trip Start Time) // Returns: 531 Records with trip_duration_sec <= 0 seconds
 --/*
 SELECT
   *,
@@ -348,17 +348,14 @@ WHERE
   --started_at > ended_at
 --*/
 
---Check if Trip Start time based on Column 3 started_at is equals OR after/later than Trip End Time based on Column 4 ended_at // Returns: 531 Records with trip_duration_sec <= 0 seconds
---/*
+--Check number of Records with Ride Length based on Difference of Column 3 and 2 ended_at and started_at more than 86,400 seconds (24 hours) // Returns: 5360 Records with trip_duration_sec > 86,400 seconds
+--*/
 SELECT
   *,
-  TIMESTAMP_DIFF(ended_at, started_at, SECOND) AS trip_duration_second
-  --min(TIMESTAMP_DIFF(ended_at, started_at, SECOND)) AS min_trip_duration_second,
-  --max(TIMESTAMP_DIFF(ended_at, started_at, SECOND)) AS max_trip_duration_second,
+  TIMESTAMP_DIFF(ended_at, started_at, SECOND) AS trip_duration_sec
 FROM
   `sw-coursera-project1.CyclisticTripData.2022_CyclisticTripData`
 WHERE
-  TIMESTAMP_DIFF(ended_at, started_at, SECOND) <= 0 --// Returns: min_trip_duration_sec of -621,201 and max_trip_duration_sec of 0
+  TIMESTAMP_DIFF(ended_at, started_at, SECOND) >= 86400
 --*/
-
 
