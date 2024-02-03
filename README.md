@@ -352,16 +352,36 @@ There is a total of 4,291,805 Records in 2022_CyclisticTripData_Cleaned2 Table a
 > Tableau Visualizations: [Tableau Visualizations](https://public.tableau.com/app/profile/starrie.woon/viz/CyclisticTrip_17003299712910/Dashboard1)
 > 
 **Key Insights**
+![image](https://github.com/StarrieW/GoogleDataAnalytics_Capstone/assets/157820867/1cf948d9-85e5-429a-ba8e-35589ec8de95)
 
 
 ## **3. Conclusion** 
 ### <ins>Step 6 of Data Analysis Process: Act</ins>
-End your presentation by summarizing key takeaways of all of the problem-solving you conducted, highlighting what you have learned from this.
 
-### Solutions<br>
-Outline a solution that would alleviate the problem and have a few alternatives in mind to show that you have given the case study considerable thought. Don’t forget to include pros and cons for each solution.
+**Recommendations**<br>
 
-### Recommendations<br>
-Explain why you made your choice and how this will affect the scenario in a positive way. Be specific and include what needs to be done, who should enforce it, and when.
+<ins>Traditional Media Campaigns</ins>
+
+Our traditional media campaigns are strategically positioned along the Top 10 Popular Routes, designed not only to enhance brand visibility but also to communicate the exclusive benefits of membership. By showcasing the advantages of becoming a member, we aim to entice casual riders to make the transition from occasional participants to committed members, unlocking a series of perks and privileges.
+
+<ins>Roadshows for Maximum Impact</ins>
+
+The roadshows organized during popular periods, particularly in Quarter 3 of the year and on Saturdays, serve as a powerful tool for engaging with casual riders directly. Through interactive displays, demonstrations, and personalized consultations, we intend to not only introduce our membership offerings but also address any reservations or inquiries, making the conversion process seamless and compelling.
+
+<ins>Digital Media Campaigns</ins>
+
+Our digital media strategy, including targeted email campaigns, plays a pivotal role in creating awareness about the membership benefits. By strategically launching these campaigns during peak riding periods, we aim to capture the attention of casual riders and showcase how membership enhances their overall riding experience. Highlighting exclusive perks and personalized offerings will be key to driving conversion through digital channels.
+
+<ins>Tailored Membership Packages</ins>
+
+Weekend-Focused Membership Plans: Our membership plans will spotlight exclusive benefits for weekend usage, enticing casual riders with a commitment to weekend adventures. By showcasing the added value of membership during their preferred riding times, we aim to convert casual riders into dedicated weekend enthusiasts.
+
+Monthly Plans for Flexibility: Recognizing the diverse commitment levels of casual riders, our monthly plans provide the flexibility they desire. This approach ensures that riders can experience the benefits of membership without the constraints of long-term commitments, making the conversion process more accessible.
+
+Rewards Program for Loyalty: The rewards program, a cornerstone of our strategy, is designed not only to reward members but also to encourage casual riders to take the leap. By accruing points for every kilometre ridden, we create a tangible and rewarding journey toward membership. Milestones in the rewards program become conversion milestones, offering additional incentives for casual riders to commit to becoming valued members.
+
+**Summary**
+
+By seamlessly integrating traditional and digital media, engaging roadshows, and introducing tailored membership packages, we aim to showcase the undeniable value of membership, making the transition from casual rider to committed member an irresistible and rewarding journey.
 
 
