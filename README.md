@@ -4,6 +4,41 @@
 ## **Executive Summary**
 
 
+**<ins>Quick Links</ins>**
+Tableau Dashboard Visualizations: [Tableau Visualizations](https://public.tableau.com/app/profile/starrie.woon/viz/GoogleDataAnalytics_Capstone-CyclisticCaseStudy/Dashboard_CyclisticRidership)
+
+**Content Outline**
+1. Introduction
+   Case Study Scenario
+   Characters and Team
+   About the Company
+2. Problems
+   Step 1 of Data Analysis Process: Ask
+   Business Task
+   Key Stakeholders
+
+   Step 2 of Data Analysis Process: Prepare
+   Data Source
+   Range of Data Used
+   Data Organization
+   Information on Data
+   Data Limitations
+   
+   Step 3 and 4 of Data Analysis Process: Process and Analyze
+   1. Storing Data in SQL on BigQuery
+   2. Ensure Data Consistency Across The 12 Tables
+   3. Combine Tables
+   4. Explore Columns Data in Combined 2022_CyclisticTripData Table
+   Key Observations From Data
+   Assumptions or Theories Based on Data and Information Provided
+   5. Data Cleaning
+   Step 5 of Data Analysis Process: Share
+   Key Insights
+   
+4. Conclusion
+   Step 6 of Data Analysis Process: Act
+   Recommendations
+   Summary
 
 ## **1. Introduction** 
 This introduction marks the commencement of my Capstone project within course outline of the Google Data Analytics Certificate course. The forthcoming analysis will be conducted utilizing SQL on BigQuery to prepare and cleanse the data, followed by the creation of Data Visualizations using Tableau.
