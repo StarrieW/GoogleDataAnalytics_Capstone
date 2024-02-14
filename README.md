@@ -1,52 +1,60 @@
 <img src="https://github.com/StarrieW/GoogleDataAnalytics_Capstone/assets/157820867/4c116cf5-5ecd-4d5d-913f-2179687ba78b" width="100" height="100"/> <br>
 # Google Data Analytics Course Capstone: Cyclistic Bike-Share Case Study
 
-## **Executive Summary**
+## **Executive Summary** <br>
 
 
-**<ins>Quick Links</ins>**
+**<ins>Quick Links</ins>** <br>
 Tableau Dashboard Visualizations: [Tableau Visualizations](https://public.tableau.com/app/profile/starrie.woon/viz/GoogleDataAnalytics_Capstone-CyclisticCaseStudy/Dashboard_CyclisticRidership)
 
-**Content Outline**
-1. Introduction
-   Case Study Scenario
-   Characters and Team
-   About the Company
-2. Problems
-   Step 1 of Data Analysis Process: Ask
-   Business Task
-   Key Stakeholders
 
-   Step 2 of Data Analysis Process: Prepare
-   Data Source
-   Range of Data Used
-   Data Organization
-   Information on Data
-   Data Limitations
+## **Content Outline** <br>
+
+1. Introduction
    
-   Step 3 and 4 of Data Analysis Process: Process and Analyze
-   1. Storing Data in SQL on BigQuery
-   2. Ensure Data Consistency Across The 12 Tables
-   3. Combine Tables
-   4. Explore Columns Data in Combined 2022_CyclisticTripData Table
-   Key Observations From Data
-   Assumptions or Theories Based on Data and Information Provided
-   5. Data Cleaning
-   Step 5 of Data Analysis Process: Share
-   Key Insights
+   1.1 Case Study Scenario <br>
+      1.2 Characters and Team<br>
+      1.3 About the Company<br>
    
-4. Conclusion
-   Step 6 of Data Analysis Process: Act
-   Recommendations
-   Summary
+2. Problems
+   
+   2.1 Step 1 of Data Analysis Process: Ask <br>
+      - 2.1.1 Business Task <br>
+      - 2.1.2 Key Stakeholders <br>
+
+   2.2 Step 2 of Data Analysis Process: Prepare <br>
+      - 2.2.1 Data Source <br>
+      - 2.2.2 Range of Data Used <br>
+      - 2.2.3 Data Organization <br>
+      - 2.2.4 Information on Data <br>
+      - 2.2.5 Data Limitations <br>
+   
+   2.3 Step 3 and 4 of Data Analysis Process: Process and Analyze <br>
+      - 2.3.1 Storing Data in SQL on BigQuery <br>
+      - 2.3.2 Ensure Data Consistency Across The 12 Tables <br>
+      - 2.3.3 Combine Tables <br>
+      - 2.3.4. Explore Columns Data in Combined 2022_CyclisticTripData Table <br>
+         - 2.3.4.1 Key Observations From Data <br>
+         - 2.3.4.2 Assumptions or Theories Based on Data and Information Provided <br>
+      - 2.3.5 Data Cleaning <br>
+
+   2.4 Step 5 of Data Analysis Process: Share <br>
+      - 2.4.1 Key Insights <br>
+   
+3. Conclusion <br>
+
+   3.1 Step 6 of Data Analysis Process: Act <br>
+   3.2 Recommendations <br>
+   3.3 Summary <br>
+   
 
 ## **1. Introduction** 
 This introduction marks the commencement of my Capstone project within course outline of the Google Data Analytics Certificate course. The forthcoming analysis will be conducted utilizing SQL on BigQuery to prepare and cleanse the data, followed by the creation of Data Visualizations using Tableau.
 
->### Case Study Scenario
+>### 1.1 Case Study Scenario
 >You are a junior data analyst working in the marketing analyst team at Cyclistic, a bike-share company in Chicago. The director of marketing believes the company’s future success depends on maximizing the number of annual memberships. Therefore, your team wants to understand how casual riders and annual members use Cyclistic bikes differently. From these insights, your team will design a new marketing strategy to convert casual riders into annual members. But first, Cyclistic executives must approve your recommendations, so they must be backed up with compelling data insights and professional data visualizations.
 >
->### Characters and teams
+>### 1.2 Characters and Teams
 >● Cyclistic: A bike-share program that features more than 5,800 bicycles and 600 docking stations. Cyclistic sets itself apart by also offering reclining bikes, hand tricycles, and cargo bikes, making bike-share more inclusive to people with disabilities and riders who can’t use a standard two-wheeled bike. The majority of riders opt for traditional bikes; about 8% of riders use the assistive options. Cyclistic users are more likely to ride for leisure, but about 30% use them to commute to work each day.
 >
 >● Lily Moreno: The director of marketing and your manager. Moreno is responsible for the development of campaigns and initiatives to promote the bike-share program. These may include email, social media, and other channels.
@@ -55,7 +63,7 @@ This introduction marks the commencement of my Capstone project within course ou
 >
 >● Cyclistic Executive Team: The notoriously detail-oriented executive team will decide whether to approve the recommended marketing program.
 >
->### About the company
+>### 1.3 About the Company
 >In 2016, Cyclistic launched a successful bike-share offering. Since then, the program has grown to a fleet of 5,824 bicycles that are geotracked and locked into a network of 692 stations across Chicago. The bikes can be unlocked from one station and returned to any other station in the system anytime. Until now, Cyclistic’s marketing strategy relied on building general awareness and appealing to broad consumer segments. One approach that helped make these things possible was the flexibility of its pricing plans: single-ride passes, full-day passes, and annual memberships. Customers who purchase single-ride or full-day passes are referred to as casual riders. Customers who purchase annual memberships are Cyclistic members.
 >
 >Cyclistic’s finance analysts have concluded that annual members are much more profitable than casual riders. Although the pricing flexibility helps Cyclistic attract more customers, Moreno believes that maximizing the number of annual members will be key to future growth. Rather than creating a marketing campaign that targets all-new customers, Moreno believes there is a very good chance to convert casual riders into members. She notes that casual riders are already aware of the Cyclistic program and have chosen Cyclistic for their mobility needs.
@@ -65,7 +73,7 @@ This introduction marks the commencement of my Capstone project within course ou
 ## **2. Problems** 
 I will address key Business Questions by following the 6 Steps of the Data Analysis Process, which includes Asking pertinent questions, Preparing and Processing data, conducting thorough Analysis, Sharing valuable insights, and taking Actionable steps.
 
-### <ins>Step 1 of Data Analysis Process: Ask</ins>
+### <ins>2.1 Step 1 of Data Analysis Process: Ask</ins>
 The following three Business Questions will guide the future marketing program:
 1. How do annual members and casual riders use Cyclistic bikes differently?
 2. Why would casual riders buy Cyclistic annual memberships?
@@ -80,7 +88,7 @@ I will start off by addressing the Business Task of this project which is to und
 2. Cyclistic Marketing Analytics Team
 3. Cyclistic Executive Team
 
-### <ins>Step 2 of Data Analysis Process: Prepare</ins>
+### <ins>2.2 Step 2 of Data Analysis Process: Prepare</ins>
 
 **Data Source**<br>
 
@@ -103,7 +111,7 @@ I will leverage on the historical trip data from January 2022 to December 2022 t
 - Unable to segregate casual riders that purchased single-ride or full-day passes (as customers who purchase single-ride or full-day passes are referred to and grouped as Casual riders while customers who purchase annual memberships are Cyclistic Members).
 
 
-### <ins>Step 3 and 4 of Data Analysis Process: Process and Analyze</ins>
+### <ins>2.3 Step 3 and 4 of Data Analysis Process: Process and Analyze</ins>
 As it is a large dataset containing more than 5.6 million rows, we will be storing it in SQL on BigQuery
 Note: We will not be using Excel spreadsheets for processing of large amount of data as Excel has a limit of 1,048,576 rows per Sheet. 
 
@@ -386,7 +394,7 @@ There is a total of 4,291,805 Records in 2022_CyclisticTripData_Cleaned2 Table a
 ```
 ![image](https://github.com/StarrieW/GoogleDataAnalytics_Capstone/assets/157820867/bcadf65d-e1ad-468b-b180-9e6a08711206)
 
-### <ins>Step 5 of Data Analysis Process: Share</ins>
+### <ins>2.4 Step 5 of Data Analysis Process: Share</ins>
 > 
 > Tableau Visualizations: [Tableau Visualizations](https://public.tableau.com/app/profile/starrie.woon/viz/GoogleDataAnalytics_Capstone-CyclisticCaseStudy/Dashboard_CyclisticRidership)
 > 
