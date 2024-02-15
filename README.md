@@ -2,11 +2,14 @@
 # Google Data Analytics Course Capstone: Cyclistic Bike-Share Case Study
 
 ## **Executive Summary** <br>
+This capstone project focuses on understanding rider patterns for the Cyclistic Bike-Share company with the goal of converting casual riders into members. 
 
+The project began with meticulous data selection and cleaning, addressing inconsistencies and missing values to ensure dataset integrity. Utilizing SQL queries, relevant information was extracted for a structured examination of member and casual rider patterns. Tableau was employed for visual exploration, resulting in insightful dashboards highlighting user behaviours, ride frequencies, and other relevant metrics. 
+
+Key discoveries from the analysis encompass the influence of climate, timing during the week and day, and route preferences on rider patterns. These insights have been translated into actionable recommendations, guiding strategic initiatives aimed at converting casual riders into dedicated members.
 
 **<ins>Quick Links</ins>** <br>
 Tableau Dashboard Visualizations: [Tableau Visualizations](https://public.tableau.com/app/profile/starrie.woon/viz/GoogleDataAnalytics_Capstone-CyclisticCaseStudy/Dashboard_CyclisticRidership)
-
 
 ## **Content Outline** <br>
 
