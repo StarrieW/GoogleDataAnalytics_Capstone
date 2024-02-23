@@ -87,30 +87,30 @@ The following three Business Questions will guide the future marketing program:
 
 I will start off by addressing the Business Task of this project which is to understand the differences in usage pattern between annual members and casual riders.
 
-**2.1.2 Key Stakeholders**
+#### **2.1.2 Key Stakeholders**
 1. Lily Moreno
 2. Cyclistic Marketing Analytics Team
 3. Cyclistic Executive Team
 
 ### <ins>2.2 Step 2 of Data Analysis Process: Prepare</ins>
 
-**2.2.1 Data Source**<br>
+#### **2.2.1 Data Source**<br>
 
 Data used for the Cyclistic (fictional company) Case Study is downloaded from [Divvy Trip History Data](https://divvy-tripdata.s3.amazonaws.com/index.html). The Divvy historical trip data, released on a monthly schedule, is made publicly available by Motivate International Inc. and provided according to the [Divvy Data License Agreement](https://divvybikes.com/data-license-agreement), where The City of Chicago permits Bikeshare (Lyft Bikes and Scooters, LLC), operators of the Divvy Bicycle Sharing Service, to make certain Divvy system data on historical trip data owned by the City (“Data”) available to the public.
 
-**2.2.2 Range of Data Used**<br>
+#### **2.2.2 Range of Data Used**<br>
 
 I will leverage on the historical trip data from January 2022 to December 2022 to conduct an analysis and identify trends on how different rider types are using Cyclistic bikes. 
 
-**2.2.3 Data Organization**
+#### **2.2.3 Data Organization**
 - Data available for download is organized by respective months. 12 CSV files containing monthly data for the year of 2022 are downloaded with naming convention of YYYYMM-divvy-tripdata and stored in a folder. 
 - Each file contains one month of data, with 13 variables and its data stored into Columns. The data contains information on Trip start day and time, Trip end day and time, Trip start and end station, Latitude and Longitude of Trip start and end station, and Rider type.
 
-**2.2.4 Information on Data**
+#### **2.2.4 Information on Data**
 - Each trip data is anonymized ensuring Data Privacy of its riders.
 - The data has been processed to remove trips that are taken by staff as they service and inspect the system; and any trips that were below 60 seconds in length (potentially false starts or users trying to re-dock a bike to ensure it was secure).
 
-**2.2.5 Data Limitations**
+#### **2.2.5 Data Limitations**
 - Due to data privacy issues, rider’s personally identifiable information are not provided, we will not be able to connect pass purchases to credit card numbers to determine if Casual Riders live in Cyclistic service area or if they have purchased multiple single passes.
 - Unable to segregate casual riders that purchased single-ride or full-day passes (as customers who purchase single-ride or full-day passes are referred to and grouped as Casual riders while customers who purchase annual memberships are Cyclistic Members).
 
@@ -119,13 +119,13 @@ I will leverage on the historical trip data from January 2022 to December 2022 t
 As it is a large dataset containing more than 5.6 million rows, we will be storing it in SQL on BigQuery
 Note: We will not be using Excel spreadsheets for processing of large amount of data as Excel has a limit of 1,048,576 rows per Sheet. 
 
-**2.3.1 Storing Data in SQL on BigQuery**
+#### **2.3.1 Storing Data in SQL on BigQuery**
 
 - A new Dataset named CyclisticTripData is created to store the data
 - 12 Tables named in the format, YYYYMM_CyclisticTripData, are created in the CyclisticTripData Dataset by uploading the 12 CSV files<br>
   ![12 Tables Created](https://github.com/StarrieW/GoogleDataAnalytics_Capstone/assets/157820867/8701d118-fcfd-4c9f-a20f-01cfe983066b)
 
-**2.3.2 Ensure Data Consistency Across the 12 Tables**
+#### **2.3.2 Ensure Data Consistency Across the 12 Tables**
 
 Ensure each Table consists of the following 13 Columns and check that each Column’s Data Type is consistent and correct across the 12 Tables:
 >1. ride_id: Unique ID per Ride
@@ -142,7 +142,7 @@ Ensure each Table consists of the following 13 Columns and check that each Colum
 >12. end_lng: Longitude of End Station
 >13. member_casual: Rider Type 
 
-**2.3.3 Combine Tables**<br>
+#### **2.3.3 Combine Tables**<br>
 > 
 > SQL Code for: [Combining Tables](https://github.com/StarrieW/GoogleDataAnalytics_Capstone/blob/main/CyclisticTripData_1_CombineTables.sql)
 > 
@@ -152,7 +152,7 @@ The 2022_CyclisticTripData Table has a total of 13 Columns and 5,667,717 Rows.
 ![image](https://github.com/StarrieW/GoogleDataAnalytics_Capstone/assets/157820867/00a32acd-741b-43f7-b4bd-233829d22bc2)
 ![image](https://github.com/StarrieW/GoogleDataAnalytics_Capstone/assets/157820867/fe2b64c8-1016-426a-b7cd-585ce0434eec)
 
-**2.3.4 Explore Columns Data in Combined 2022_CyclisticTripData Table**<br>
+#### **2.3.4 Explore Columns Data in Combined 2022_CyclisticTripData Table**<br>
 > 
 > SQL Code for: [Checking Columns Data](https://github.com/StarrieW/GoogleDataAnalytics_Capstone/blob/main/CyclisticTripData_2_CheckColumnsData.sql)
 > 
@@ -276,7 +276,7 @@ WHERE
 1. Any trips below or equals to 60 seconds (<= 60 seconds) in length are assumed to be potentially false starts or users trying to re-dock a bike to ensure it was secure, hence it is removed from the Dataset.
 2. Any trips above 86,400 seconds (> 24 hours) in length are considered rare occurences (outliers) and as it makes up a small percentage of 0.09% (5,360 out of total 5,667,717 records) of the original dataset, it is removed from the Dataset.
 
-**2.3.5 Data Cleaning**
+#### **2.3.5 Data Cleaning**
 > 
 > SQL Code for: [Cleaning Data and Creation of New Columns](https://github.com/StarrieW/GoogleDataAnalytics_Capstone/blob/main/CyclisticTripData_3_CleanCreateColumns.sql)
 > 
@@ -402,14 +402,14 @@ There is a total of 4,291,805 Records in 2022_CyclisticTripData_Cleaned2 Table a
 > 
 > Tableau Visualizations: [Tableau Visualizations](https://public.tableau.com/app/profile/starrie.woon/viz/GoogleDataAnalytics_Capstone-CyclisticCaseStudy/Dashboard_CyclisticRidership)
 > 
-**2.4.1 Key Insights**
+#### **2.4.1 Key Insights**
 ![image](https://github.com/StarrieW/GoogleDataAnalytics_Capstone/assets/157820867/1cf948d9-85e5-429a-ba8e-35589ec8de95)
 
 
 ## **3. Conclusion** 
 ### <ins>3.1 Step 6 of Data Analysis Process: Act</ins>
 
-**3.1.1 Recommendations**<br>
+#### **3.1.1 Recommendations**<br>
 
 <ins>1. Roadshows for Maximum Impact</ins>
 
