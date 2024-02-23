@@ -399,9 +399,10 @@ There is a total of 4,291,805 Records in 2022_CyclisticTripData_Cleaned2 Table a
 
 ### <ins>2.4 Step 5 of Data Analysis Process: Share</ins>
 > 
-> Tableau Visualizations: [Tableau Visualizations](https://public.tableau.com/app/profile/starrie.woon/viz/GoogleDataAnalytics_Capstone-CyclisticCaseStudy/Dashboard_CyclisticRidership)
+> Tableau Dashboard: [Data Visualizations](https://public.tableau.com/app/profile/starrie.woon/viz/GoogleDataAnalytics_Capstone-CyclisticCaseStudy/Dashboard_CyclisticRidership)
 > 
 #### **2.4.1 Key Insights**
+Data Visualizations are created using Tableau with the key insights summarized in a Dashboard.
 ![image](https://github.com/StarrieW/GoogleDataAnalytics_Capstone/assets/157820867/1cf948d9-85e5-429a-ba8e-35589ec8de95)
 
 
