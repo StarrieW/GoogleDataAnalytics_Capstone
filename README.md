@@ -8,8 +8,7 @@ The project began with meticulous data selection and cleaning, addressing incons
 
 Key discoveries from the analysis encompass the influence of climate, timing during the week and day, and route preferences on rider patterns. These insights have been translated into actionable recommendations, guiding strategic initiatives aimed at converting casual riders into dedicated members.
 
-**<ins>Quick Links</ins>** <br>
-Tableau Dashboard Visualizations: [Tableau Visualizations](https://public.tableau.com/app/profile/starrie.woon/viz/GoogleDataAnalytics_Capstone-CyclisticCaseStudy/Dashboard_CyclisticRidership)
+Click [here](https://public.tableau.com/app/profile/starrie.woon/viz/GoogleDataAnalytics_Capstone-CyclisticCaseStudy/Dashboard_CyclisticRidership) to view completed Tableau Dashboard for Data Visualizations.
 
 ## **Content Outline** <br>
 
@@ -22,38 +21,38 @@ Tableau Dashboard Visualizations: [Tableau Visualizations](https://public.tablea
 2. [Problems](https://github.com/StarrieW/GoogleDataAnalytics_Capstone/blob/main/README.md#2-problems)
    
    2.1 [Step 1 of Data Analysis Process: Ask](https://github.com/StarrieW/GoogleDataAnalytics_Capstone/blob/main/README.md#21-step-1-of-data-analysis-process-ask) <br>
-      - 2.1.1 Business Task <br>
-      - 2.1.2 Key Stakeholders <br>
+      - 2.1.1 [Business Task](https://github.com/StarrieW/GoogleDataAnalytics_Capstone/blob/main/README.md#211-business-task) <br>
+      - 2.1.2 [Key Stakeholders](https://github.com/StarrieW/GoogleDataAnalytics_Capstone/blob/main/README.md#212-key-stakeholders) <br>
 
    2.2 [Step 2 of Data Analysis Process: Prepare](https://github.com/StarrieW/GoogleDataAnalytics_Capstone/blob/main/README.md#22-step-2-of-data-analysis-process-prepare) <br>
-      - 2.2.1 Data Source <br>
-      - 2.2.2 Range of Data Used <br>
-      - 2.2.3 Data Organization <br>
-      - 2.2.4 Information on Data <br>
-      - 2.2.5 Data Limitations <br>
+      - 2.2.1 [Data Source](https://github.com/StarrieW/GoogleDataAnalytics_Capstone/blob/main/README.md#221-data-source) <br>
+      - 2.2.2 [Range of Data Used](https://github.com/StarrieW/GoogleDataAnalytics_Capstone/blob/main/README.md#222-range-of-data-used) <br>
+      - 2.2.3 [Data Organization](https://github.com/StarrieW/GoogleDataAnalytics_Capstone/blob/main/README.md#223-data-organization) <br>
+      - 2.2.4 [Information on Data](https://github.com/StarrieW/GoogleDataAnalytics_Capstone/blob/main/README.md#224-information-on-data) <br>
+      - 2.2.5 [Data Limitations](https://github.com/StarrieW/GoogleDataAnalytics_Capstone/blob/main/README.md#225-data-limitations) <br>
    
    2.3 [Step 3 and 4 of Data Analysis Process: Process and Analyze](https://github.com/StarrieW/GoogleDataAnalytics_Capstone/blob/main/README.md#23-step-3-and-4-of-data-analysis-process-process-and-analyze) <br>
-      - 2.3.1 Storing Data in SQL on BigQuery <br>
-      - 2.3.2 Ensure Data Consistency Across the 12 Tables <br>
-      - 2.3.3 Combine Tables <br>
-      - 2.3.4 Explore Columns Data in Combined 2022_CyclisticTripData Table <br>
+      - 2.3.1 [Storing Data in SQL on BigQuery](https://github.com/StarrieW/GoogleDataAnalytics_Capstone/blob/main/README.md#231-storing-data-in-sql-on-bigquery) <br>
+      - 2.3.2 [Ensure Data Consistency Across the 12 Tables](https://github.com/StarrieW/GoogleDataAnalytics_Capstone/blob/main/README.md#232-ensure-data-consistency-across-the-12-tables) <br>
+      - 2.3.3 [Combine Tables](https://github.com/StarrieW/GoogleDataAnalytics_Capstone/blob/main/README.md#233-combine-tables) <br>
+      - 2.3.4 [Explore Columns Data in Combined 2022_CyclisticTripData Table](https://github.com/StarrieW/GoogleDataAnalytics_Capstone/blob/main/README.md#234-explore-columns-data-in-combined-2022_cyclistictripdata-table) <br>
          - 2.3.4.1 Key Observations From Data <br>
          - 2.3.4.2 Assumptions or Theories Based on Data and Information Provided <br>
-      - 2.3.5 Data Cleaning <br>
+      - 2.3.5 [Data Cleaning](https://github.com/StarrieW/GoogleDataAnalytics_Capstone/blob/main/README.md#235-data-cleaning) <br>
 
    2.4 [Step 5 of Data Analysis Process: Share](https://github.com/StarrieW/GoogleDataAnalytics_Capstone/blob/main/README.md#24-step-5-of-data-analysis-process-share) <br>
-      - 2.4.1 Key Insights <br>
+      - 2.4.1 [Key Insights](https://github.com/StarrieW/GoogleDataAnalytics_Capstone/blob/main/README.md#241-key-insights) <br>
    
 3. [Conclusion](https://github.com/StarrieW/GoogleDataAnalytics_Capstone/blob/main/README.md#3-conclusion) <br>
 
    3.1 [Step 6 of Data Analysis Process: Act](https://github.com/StarrieW/GoogleDataAnalytics_Capstone/blob/main/README.md#31-step-6-of-data-analysis-process-act) <br>
-      - 3.1.1 Recommendations <br>
+      - 3.1.1 [Recommendations](https://github.com/StarrieW/GoogleDataAnalytics_Capstone/blob/main/README.md#311-recommendations) <br>
    
    3.2 [Summary](https://github.com/StarrieW/GoogleDataAnalytics_Capstone/blob/main/README.md#32-summary) <br>
    
 
 ## **1. Introduction** 
-This introduction marks the commencement of my Capstone project within course outline of the Google Data Analytics Certificate course. The forthcoming analysis will be conducted utilizing SQL on BigQuery to prepare and cleanse the data, followed by the creation of Data Visualizations using Tableau.
+This introduction marks the commencement of the Capstone project within course outline of the Google Data Analytics Certificate course. The forthcoming data analysis will be conducted utilizing SQL on BigQuery for data preparation and cleaning, followed by the creation of data visualizations using Tableau.
 
 >### 1.1 Case Study Scenario
 >You are a junior data analyst working in the marketing analyst team at Cyclistic, a bike-share company in Chicago. The director of marketing believes the company’s future success depends on maximizing the number of annual memberships. Therefore, your team wants to understand how casual riders and annual members use Cyclistic bikes differently. From these insights, your team will design a new marketing strategy to convert casual riders into annual members. But first, Cyclistic executives must approve your recommendations, so they must be backed up with compelling data insights and professional data visualizations.
@@ -75,7 +74,7 @@ This introduction marks the commencement of my Capstone project within course ou
 >Moreno has set a clear goal: Design marketing strategies aimed at converting casual riders into annual members. In order to do that, however, the marketing analyst team needs to better understand how annual members and casual riders differ, why casual riders would buy a membership, and how digital media could affect their marketing tactics. Moreno and her team are interested in analyzing the Cyclistic historical bike trip data to identify trends.
 
 ## **2. Problems** 
-I will address key Business Questions by following the 6 Steps of the Data Analysis Process, which includes Asking pertinent questions, Preparing and Processing data, conducting thorough Analysis, Sharing valuable insights, and taking Actionable steps.
+Key Business Questions can be addressed by following the 6 Steps of the Data Analysis Process which includes: Asking pertinent questions, Preparing and Processing data, conducting thorough Analysis, Sharing valuable insights, and taking Actionable steps.
 
 ### <ins>2.1 Step 1 of Data Analysis Process: Ask</ins>
 The following three Business Questions will guide the future marketing program:
@@ -85,7 +84,7 @@ The following three Business Questions will guide the future marketing program:
 
 #### **2.1.1 Business Task**<br>
 
-I will start off by addressing the Business Task of this project which is to understand the differences in usage pattern between annual members and casual riders.
+Business Task of this project is to understand the differences in usage pattern between annual members and casual riders.
 
 #### **2.1.2 Key Stakeholders**
 1. Lily Moreno
