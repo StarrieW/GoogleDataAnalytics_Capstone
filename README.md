@@ -15,24 +15,24 @@ Tableau Dashboard Visualizations: [Tableau Visualizations](https://public.tablea
 
 1. [Introduction](https://github.com/StarrieW/GoogleDataAnalytics_Capstone/blob/main/README.md#1-introduction)
    
-   1.1 Case Study Scenario <br>
-   1.2 Characters and Team<br>
-   1.3 About the Company<br>
+   1.1 [Case Study Scenario](https://github.com/StarrieW/GoogleDataAnalytics_Capstone/blob/main/README.md#11-case-study-scenario) <br>
+   1.2 [Characters and Team](https://github.com/StarrieW/GoogleDataAnalytics_Capstone/blob/main/README.md#12-characters-and-teams)<br>
+   1.3 [About the Company](https://github.com/StarrieW/GoogleDataAnalytics_Capstone/blob/main/README.md#13-about-the-company)<br>
    
 2. [Problems](https://github.com/StarrieW/GoogleDataAnalytics_Capstone/blob/main/README.md#2-problems)
    
-   2.1 Step 1 of Data Analysis Process: Ask <br>
+   2.1 [Step 1 of Data Analysis Process: Ask](https://github.com/StarrieW/GoogleDataAnalytics_Capstone/blob/main/README.md#21-step-1-of-data-analysis-process-ask) <br>
       - 2.1.1 Business Task <br>
       - 2.1.2 Key Stakeholders <br>
 
-   2.2 Step 2 of Data Analysis Process: Prepare <br>
+   2.2 [Step 2 of Data Analysis Process: Prepare](https://github.com/StarrieW/GoogleDataAnalytics_Capstone/blob/main/README.md#22-step-2-of-data-analysis-process-prepare) <br>
       - 2.2.1 Data Source <br>
       - 2.2.2 Range of Data Used <br>
       - 2.2.3 Data Organization <br>
       - 2.2.4 Information on Data <br>
       - 2.2.5 Data Limitations <br>
    
-   2.3 Step 3 and 4 of Data Analysis Process: Process and Analyze <br>
+   2.3 [Step 3 and 4 of Data Analysis Process: Process and Analyze](https://github.com/StarrieW/GoogleDataAnalytics_Capstone/blob/main/README.md#23-step-3-and-4-of-data-analysis-process-process-and-analyze) <br>
       - 2.3.1 Storing Data in SQL on BigQuery <br>
       - 2.3.2 Ensure Data Consistency Across the 12 Tables <br>
       - 2.3.3 Combine Tables <br>
@@ -41,14 +41,15 @@ Tableau Dashboard Visualizations: [Tableau Visualizations](https://public.tablea
          - 2.3.4.2 Assumptions or Theories Based on Data and Information Provided <br>
       - 2.3.5 Data Cleaning <br>
 
-   2.4 Step 5 of Data Analysis Process: Share <br>
+   2.4 [Step 5 of Data Analysis Process: Share](https://github.com/StarrieW/GoogleDataAnalytics_Capstone/blob/main/README.md#24-step-5-of-data-analysis-process-share) <br>
       - 2.4.1 Key Insights <br>
    
 3. [Conclusion](https://github.com/StarrieW/GoogleDataAnalytics_Capstone/blob/main/README.md#3-conclusion) <br>
 
-   3.1 Step 6 of Data Analysis Process: Act <br>
-   3.2 Recommendations <br>
-   3.3 Summary <br>
+   3.1 [Step 6 of Data Analysis Process: Act](https://github.com/StarrieW/GoogleDataAnalytics_Capstone/blob/main/README.md#31-step-6-of-data-analysis-process-act) <br>
+      - 3.1.1 Recommendations <br>
+   
+   3.2 [Summary](https://github.com/StarrieW/GoogleDataAnalytics_Capstone/blob/main/README.md#32-summary) <br>
    
 
 ## **1. Introduction** 
@@ -82,7 +83,7 @@ The following three Business Questions will guide the future marketing program:
 2. Why would casual riders buy Cyclistic annual memberships?
 3. How can Cyclistic use digital media to influence casual riders to become members?
 
-**2.1.1 Business Task**<br>
+#### **2.1.1 Business Task**<br>
 
 I will start off by addressing the Business Task of this project which is to understand the differences in usage pattern between annual members and casual riders.
 
@@ -408,13 +409,13 @@ There is a total of 4,291,805 Records in 2022_CyclisticTripData_Cleaned2 Table a
 ## **3. Conclusion** 
 ### <ins>3.1 Step 6 of Data Analysis Process: Act</ins>
 
-### *3.2 *Recommendations**<br>
+**3.1.1 Recommendations**<br>
 
-<ins>Roadshows for Maximum Impact</ins>
+<ins>1. Roadshows for Maximum Impact</ins>
 
 The roadshows organized during popular periods, particularly in _Quarter 3 of the year_ and on _Saturdays_, serve as a powerful tool for engaging with Casual Riders directly. Through interactive displays, demonstrations, and personalized consultations, we intend to not only introduce our membership offerings but also address any reservations or inquiries, making the conversion process seamless and compelling.
 
-<ins>Tailored Membership Packages</ins>
+<ins>2. Tailored Membership Packages</ins>
 
 Weekend-Focused Membership Plans: Our membership plans will spotlight exclusive benefits for _weekend usage_, enticing Casual Riders with a commitment to weekend adventures. By showcasing the added value of membership during their preferred riding times, we aim to convert Casual Riders into dedicated weekend enthusiasts.
 
@@ -422,15 +423,15 @@ Monthly Plans for Flexibility: Recognizing the diverse commitment levels of Casu
 
 Rewards Program for Loyalty: The rewards program, a cornerstone of our strategy, is designed not only to reward Members but also to encourage Casual Riders to take the leap, as Casual Riders currently have a higher median Ride Duration. By accruing points for every kilometre ridden, we can create a tangible and rewarding journey towards having a membership. Milestones in the rewards program become conversion milestones, offering additional incentives for Casual Riders to commit to becoming valued members.
 
-<ins>Traditional Media Campaigns</ins>
+<ins>3. Traditional Media Campaigns</ins>
 
 Our traditional media campaigns are strategically positioned along the _Top 10 Popular Routes_, designed not only to enhance brand visibility but also to communicate the exclusive benefits of membership. By showcasing the advantages of becoming a Member, we aim to entice Casual Riders to make the transition from occasional participants to committed Members, unlocking a series of perks and privileges.
 
-<ins>Digital Media Campaigns</ins>
+<ins>4. Digital Media Campaigns</ins>
 
 Our digital media strategy, including targeted email campaigns, plays a pivotal role in creating awareness about the membership benefits. By strategically launching these campaigns _during peak riding periods_, we aim to capture the attention of Casual Riders and showcase how membership enhances their overall riding experience. Highlighting exclusive perks and personalized offerings will be key to driving conversion through digital channels.
 
-### **3.3 Summary**
+### <ins>3.2 Summary</ins>
 
 By seamlessly integrating traditional and digital media, engaging roadshows and introducing tailored membership packages, we aim to showcase the undeniable value of signing up for the membership, so that Casual Riders are willing to transition to become a committed Member.
 
